@@ -1,0 +1,30 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    min-height: 100vh;
+    min-width: 20vw;
+}
+
+#mainContainer{
+    display: flex;
+}
+
+#navbar {
+    display: flex;
+    background-color: purple;
+    min-width: 80vw;
+    min-height: 5vh;
+}
+
+#mainContent{
+    display: flex;
+    background-color: aqua;
+    flex-direction: column;
+    min-height: 92.25vh;
+}
