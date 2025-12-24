@@ -1,0 +1,46 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.subContainer2 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #E7E7E9;
+    flex-grow: 2;
+}
+
+.subContainer1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 15vw;
+    max-height: 100vh;
+    border: solid #E7E7E9;
+    border-width: 2px 0 0 0;
+    flex-grow: 1;
+}
+
+.container{
+    display: flex;
+
+}
+
+.navbar {
+    display: flex;
+    padding: 20px;
+    border:solid #E7E7E9;
+    border-width: 0 0 2px 0;
+    flex-grow: 1;
+    max-height: 5vh;
+    align-items: center;
+}
+
+.navLogo {
+    flex-grow: 1;
+}
+
+.navLinks {
+    display: flex;
+    flex-grow: 0;
+    gap: 2rem;
+}
