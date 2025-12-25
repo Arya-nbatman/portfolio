@@ -1,0 +1,65 @@
+<svg width="400" height="360" viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes popIn {
+        0% { opacity: 0; transform: translateY(12px) scale(0.95); }
+        100% { opacity: 1; transform: translateY(0) scale(1); }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      
+      .msg-group { opacity: 0; animation: popIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+      .text { font-family: -apple-system, system-ui, sans-serif; font-size: 14px; letter-spacing: -0.2px; }
+      .label { font-family: sans-serif; font-size: 11px; font-weight: 700; fill: #999; text-transform: uppercase; }
+      
+      .bg-grey { fill: #F2F2F7; }
+      .bg-blue { fill: #2F5BFF; }
+      .txt-black { fill: #000000; }
+      .txt-white { fill: #FFFFFF; }
+      
+      .dot { animation: blink 1s infinite; fill: #999; }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <g class="msg-group" style="animation-delay: 0.2s;">
+    <text x="50" y="25" class="label">Airla Fan</text>
+    <circle fill="#000" cx="25" cy="50" r="14" />
+    <circle fill="#fff" cx="28" cy="48" r="4" />
+    
+    <rect x="50" y="32" width="265" height="50" rx="18" class="bg-grey" />
+    <text x="65" y="52" class="text txt-black">Hey there, it's so nice to meet you!</text>
+    <text x="65" y="70" class="text txt-black">How can I help you?</text>
+  </g>
+
+  <g class="msg-group" style="animation-delay: 1.4s;">
+    <text x="350" y="105" class="label" text-anchor="end">You</text>
+    <rect x="135" y="112" width="215" height="38" rx="18" class="bg-blue" />
+    <text x="150" y="136" class="text txt-white">Hey Airla! Can I see your work?</text>
+  </g>
+
+  <g class="msg-group" style="animation-delay: 2.2s;">
+    <rect x="50" y="165" width="50" height="30" rx="15" class="bg-grey" />
+    <circle class="dot" cx="62" cy="180" r="2.5" style="animation-delay: 0s;" />
+    <circle class="dot" cx="75" cy="180" r="2.5" style="animation-delay: 0.2s;" />
+    <circle class="dot" cx="88" cy="180" r="2.5" style="animation-delay: 0.4s;" />
+    <animate attributeName="display" from="inline" to="none" begin="3s" dur="0.1s" fill="freeze" />
+  </g>
+
+  <g class="msg-group" style="animation-delay: 3s;">
+    <circle fill="#000" cx="25" cy="185" r="14" />
+    <circle fill="#fff" cx="28" cy="183" r="4" />
+    <rect x="50" y="165" width="265" height="70" rx="18" class="bg-grey" />
+    <text x="65" y="188" class="text txt-black">Of course! I specialize in crafting</text>
+    <text x="65" y="208" class="text txt-black">thoughtful digital experiences and</text>
+    <text x="65" y="226" class="text txt-black">memorable visual brands.</text>
+  </g>
+
+  <g class="msg-group" style="animation-delay: 4.2s;">
+    <rect x="50" y="242" width="200" height="38" rx="18" class="bg-grey" />
+    <text x="65" y="266" class="text txt-black">Scroll down to see my work!</text>
+  </g>
+</svg>
