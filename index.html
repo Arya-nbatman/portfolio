@@ -2,32 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width= <device-width>, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/app.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryan Singh | Portfolio</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="subContainer1">
-        <div class="sidebar">
-          <img
-            src="https://t4.ftcdn.net/jpg/05/31/37/89/360_F_531378938_xwRjN9e5ramdPj2coDwHrwk9QHckVa5Y.jpg"
-            class="sidebarImg"
-          />
-          <h2>Aryan Singh</h2>
-          <span>@ary_nbatman. United states</span>
-          <h4>Web developer</h4>
-          <p>Less than 1 year experience includes:</p>
-          <svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+    <div class="layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <img
+          class="sidebar-img"
+          src="https://t4.ftcdn.net/jpg/05/31/37/89/360_F_531378938_xwRjN9e5ramdPj2coDwHrwk9QHckVa5Y.jpg"
+          alt="Profile"
+        />
+
+        <span class="username">@ary_nbatman · US</span>
+        <h2 class="role-tag">Aryan Singh</h2>
+        <p class="experience">Web Developer • &lt;1 yr exp</p>
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 400 120"
+            width="400"
+            height="120"
+          >
             <rect width="100%" height="100%" fill="transparent" />
-            <svg
-              x="80"
-              y="35"
-              width="40"
-              height="40"
-              viewBox="0 0 128 128"
-              class="logo-item flutter"
-            >
+
+            <!-- FLUTTER -->
+            <svg x="80" y="35" width="40" height="40" viewBox="0 0 128 128">
               <g fill="#3FB6D3">
                 <path
                   d="M12.3 64.2L76.3 0h39.4L32.1 83.6zM76.3 128h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"
@@ -56,14 +67,8 @@
               />
             </svg>
 
-            <svg
-              x="150"
-              y="35"
-              width="40"
-              height="40"
-              viewBox="0 0 128 128"
-              class="logo-item typescript"
-            >
+            <!-- TYPESCRIPT -->
+            <svg x="150" y="35" width="40" height="40" viewBox="0 0 128 128">
               <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z" />
               <path
                 fill="#007acc"
@@ -71,516 +76,329 @@
               />
             </svg>
 
-            <svg
-              x="220"
-              y="35"
-              width="40"
-              height="40"
-              viewBox="0 0 128 128"
-              class="logo-item react"
-            >
-              <g fill="#61DAFB">
-                <circle cx="64" cy="64" r="11.4" />
-                <path
-                  d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"
+            <!-- REACT -->
+            <svg x="220" y="35" width="50" height="50" viewBox="0 0 128 128">
+              <g fill="none" stroke="#61DAFB" stroke-width="6">
+                <!-- center dot -->
+                <circle cx="64" cy="64" r="11" fill="#61DAFB" />
+
+                <!-- horizontal ring -->
+                <ellipse cx="64" cy="64" rx="50" ry="20" />
+
+                <!-- diagonal ring -->
+                <ellipse
+                  cx="64"
+                  cy="64"
+                  rx="50"
+                  ry="20"
+                  transform="rotate(60 64 64)"
+                />
+
+                <!-- other diagonal ring -->
+                <ellipse
+                  cx="64"
+                  cy="64"
+                  rx="50"
+                  ry="20"
+                  transform="rotate(-60 64 64)"
                 />
               </g>
             </svg>
 
-            <svg
-              x="290"
-              y="35"
-              width="40"
-              height="40"
-              viewBox="0 0 128 128"
-              class="logo-item python"
-            >
-              <linearGradient
-                id="python-grad-a"
-                gradientUnits="userSpaceOnUse"
-                x1="70.252"
-                y1="1237.476"
-                x2="170.659"
-                y2="1151.089"
-                gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
-              >
-                <stop offset="0" stop-color="#5A9FD4" />
-                <stop offset="1" stop-color="#306998" />
-              </linearGradient>
-              <linearGradient
-                id="python-grad-b"
-                gradientUnits="userSpaceOnUse"
-                x1="209.474"
-                y1="1098.811"
-                x2="173.62"
-                y2="1149.537"
-                gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
-              >
-                <stop offset="0" stop-color="#FFD43B" />
-                <stop offset="1" stop-color="#FFE873" />
-              </linearGradient>
+            <!-- PYTHON -->
+            <svg x="290" y="35" width="50" height="50" viewBox="0 0 128 128">
               <path
-                fill="url(#python-grad-a)"
-                d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"
-                transform="translate(0 10.26)"
+                fill="#306998"
+                d="M63.4 1.99c-4.22.02-8.25.38-11.8 1.01-10.45 1.85-12.35 5.71-12.35 12.84v9.41h24.69v3.14H29.98c-7.18 0-13.46 4.31-15.43 12.52-2.27 9.41-2.37 15.27 0 25.1 1.76 7.31 5.95 12.52 13.12 12.52h8.49V67.23c0-8.15 7.05-15.34 15.43-15.34h24.66c6.87 0 12.35-5.65 12.35-12.55V15.83c0-6.69-5.65-11.72-12.35-12.84-4.24-.71-8.65-1.03-12.87-1.01z"
               />
               <path
-                fill="url(#python-grad-b)"
-                d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"
-                transform="translate(0 10.26)"
-              />
-              <radialGradient
-                id="python-grad-c"
-                cx="1825.678"
-                cy="444.45"
-                r="26.743"
-                gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset="0" stop-color="#B8B8B8" stop-opacity=".498" />
-                <stop offset="1" stop-color="#7F7F7F" stop-opacity="0" />
-              </radialGradient>
-              <path
-                opacity=".444"
-                fill="url(#python-grad-c)"
-                d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"
+                fill="#FFD43B"
+                d="M91.68 28.38v10.97c0 8.5-7.21 15.66-15.43 15.66H51.59c-6.76 0-12.35 5.78-12.35 12.55v23.51c0 6.69 5.82 10.63 12.35 12.55 7.82 2.3 15.31 2.71 24.67 0 6.22-1.8 12.35-5.42 12.35-12.55v-9.41H63.94v-3.14h37.01c7.18 0 9.85-5 12.35-12.52 2.58-7.73 2.47-15.17 0-25.1-1.77-7.15-5.16-12.52-12.35-12.52z"
               />
             </svg>
           </svg>
-          <hr class="hr1" />
-          <button class="sidebar-btn">
-            <span class="icon-box">
-              <!-- simple layout icon -->
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="4" width="7" height="16" rx="2" fill="white" />
-                <rect x="14" y="4" width="7" height="16" rx="2" fill="white" />
-              </svg>
-            </span>
-            <span class="label">Portfolio</span>
-          </button>
-          <button class="sidebar-btn">
-            <span class="icon-box">
-              <!-- simple layout icon -->
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="4" width="7" height="16" rx="2" fill="white" />
-                <rect x="14" y="4" width="7" height="16" rx="2" fill="white" />
-              </svg>
-            </span>
-            <span class="label">Get CV</span>
-          </button>
         </div>
-      </div>
-      <div class="subContainer2">
-        <div class="navbar">
-          <div class="navLogo">
-            <img src="./static/images/logo.svg" />
-          </div>
-          <nav class="navLinks">
-            <a class="navAnchors" href="/">Projects</a>
-            <a class="navAnchors" href="/">Gallery</a>
-            <a class="navAnchors" href="/">About</a>
-            <a class="navAnchors" href="/">Blogs</a>
+        <hr />
+
+        <button class="sidebar-btn">Github</button>
+        <button class="sidebar-btn">Download CV</button>
+        <button class="sidebar-btn play-game">🎮 Play a Game</button>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+        <!-- NAV -->
+        <header class="navbar">
+          <div class="logo">AS.</div>
+          <nav class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+            <a href="./blog/blog.html">Blogs</a>
+            <button class="sidebar-btn" id="theme-toggle">Switch Theme ◑</button>
           </nav>
-        </div>
-        <div class="body">
+        </header>
+
+        <!-- HERO -->
+        <section class="heroContainer">
           <div class="hero">
-            <div class="heroText">
-              <h1 class="heroHeading">
-                I'm
-                <span class="italic"
-                  >Airla Fan <span class="heroStar">ᯓ★ˎˊ˗</span>
-                </span>
-                <br />
-                an interdisciplinary product <br />
-                designer driven by visual craft & <br />
-                motion
-              </h1>
-              <div>
-                <div>
-                  <span><span>✎</span> Previously Design @JPMorganChase</span>
+            <h1>
+              I'm
+              <span class="italic"
+                >Aryan Singh <span class="star"> ᯓ★ˎˊ˗ </span></span
+              ><br />
+              an interdisciplinary<br />
+              product designer driven by <br />visual craft & motion
+            </h1>
+
+            <p><span>✎</span> Previously Design @JPMorganChase</p>
+            <p><span>✦</span>Figma Campus Leader @Carnegie Mellon</p>
+          </div>
+
+          <!-- Chat SVG -->
+          <div class="svgHero">
+            <svg
+              width="400"
+              height="360"
+              viewBox="0 0 400 360"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="100%" height="100%" fill="#ffffff" />
+
+              <g class="msg-group" style="animation-delay: 0.2s">
+                <text x="50" y="25" class="label">Airla Fan</text>
+                <circle fill="#000" cx="25" cy="50" r="14" />
+                <circle fill="#fff" cx="28" cy="48" r="4" />
+
+                <rect
+                  x="50"
+                  y="32"
+                  width="265"
+                  height="50"
+                  rx="18"
+                  class="bg-grey"
+                />
+                <text x="65" y="52" class="text txt-black">
+                  Hey there, it's so nice to meet you!
+                </text>
+                <text x="65" y="70" class="text txt-black">
+                  How can I help you?
+                </text>
+              </g>
+
+              <g class="msg-group" style="animation-delay: 1.4s">
+                <text x="350" y="105" class="label" text-anchor="end">You</text>
+                <rect
+                  x="135"
+                  y="112"
+                  width="215"
+                  height="38"
+                  rx="18"
+                  class="bg-blue"
+                />
+                <text x="150" y="136" class="text txt-white">
+                  Hey Airla! Can I see your work?
+                </text>
+              </g>
+
+              <g class="msg-group" style="animation-delay: 2.2s">
+                <rect
+                  x="50"
+                  y="165"
+                  width="50"
+                  height="30"
+                  rx="15"
+                  class="bg-grey"
+                />
+                <circle
+                  class="dot"
+                  cx="62"
+                  cy="180"
+                  r="2.5"
+                  style="animation-delay: 0s"
+                />
+                <circle
+                  class="dot"
+                  cx="75"
+                  cy="180"
+                  r="2.5"
+                  style="animation-delay: 0.2s"
+                />
+                <circle
+                  class="dot"
+                  cx="88"
+                  cy="180"
+                  r="2.5"
+                  style="animation-delay: 0.4s"
+                />
+                <animate
+                  attributeName="display"
+                  from="inline"
+                  to="none"
+                  begin="3s"
+                  dur="0.1s"
+                  fill="freeze"
+                />
+              </g>
+
+              <g class="msg-group" style="animation-delay: 3s">
+                <circle fill="#000" cx="25" cy="185" r="14" />
+                <circle fill="#fff" cx="28" cy="183" r="4" />
+                <rect
+                  x="50"
+                  y="165"
+                  width="265"
+                  height="70"
+                  rx="18"
+                  class="bg-grey"
+                />
+                <text x="65" y="188" class="text txt-black">
+                  Of course! I specialize in crafting
+                </text>
+                <text x="65" y="208" class="text txt-black">
+                  thoughtful digital experiences and
+                </text>
+                <text x="65" y="226" class="text txt-black">
+                  memorable visual brands.
+                </text>
+              </g>
+
+              <g class="msg-group" style="animation-delay: 4.2s">
+                <rect
+                  x="50"
+                  y="242"
+                  width="200"
+                  height="38"
+                  rx="18"
+                  class="bg-grey"
+                />
+                <text x="65" y="266" class="text txt-black">
+                  Scroll down to see my work!
+                </text>
+              </g>
+            </svg>
+          </div>
+        </section>
+
+        <hr />
+
+        <!-- PROJECTS -->
+        <section id="projects">
+          <div class="projectsHeading">
+            <h1>Selected projects ↓</h1>
+            <div class="tags">
+              <span>Internship</span>
+              <span>Mobile Design</span>
+              <span>Mobile Design</span>
+            </div>
+          </div>
+          <div class="projects-grid">
+            <article class="card">
+              <div class="card-hero">
+                <div class="card-logo">⚡</div>
+                <img
+                  class="illustration"
+                  src="https://cdn-icons-png.flaticon.com/512/7893/7893979.png"
+                />
+              </div>
+              <div class="card-content">
+                <div class="tags">
+                  <span>Internship</span>
+                  <span>Mobile Design</span>
                 </div>
-                <div>
-                  <span><span>✎</span> Previously Design @JPMorganChase</span>
+                <h3>Chase Family Banking</h3>
+                <p>Helping parents manage finances for their children.</p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hero">
+                <div class="card-logo">⚡</div>
+                <img
+                  class="illustration"
+                  src="https://cdn-icons-png.flaticon.com/512/7893/7893979.png"
+                />
+              </div>
+              <div class="card-content">
+                <div class="tags">
+                  <span>Internship</span>
+                  <span>Mobile Design</span>
                 </div>
+                <h3>Chase Family Banking</h3>
+                <p>Helping parents manage finances for their children.</p>
               </div>
-            </div>
-            <div>
-              <svg
-                width="400"
-                height="360"
-                viewBox="0 0 400 360"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <style>
-                    @keyframes popIn {
-                      0% {
-                        opacity: 0;
-                        transform: translateY(12px) scale(0.95);
-                      }
-                      100% {
-                        opacity: 1;
-                        transform: translateY(0) scale(1);
-                      }
-                    }
-                    @keyframes blink {
-                      0%,
-                      100% {
-                        opacity: 0.3;
-                      }
-                      50% {
-                        opacity: 1;
-                      }
-                    }
+            </article>
 
-                    .msg-group {
-                      opacity: 0;
-                      animation: popIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)
-                        forwards;
-                    }
-                    .text {
-                      font-family: -apple-system, system-ui, sans-serif;
-                      font-size: 14px;
-                      letter-spacing: -0.2px;
-                    }
-                    .label {
-                      font-family: sans-serif;
-                      font-size: 11px;
-                      font-weight: 700;
-                      fill: #999;
-                      text-transform: uppercase;
-                    }
+            <article class="card">
+              <div class="card-hero">
+                <div class="card-logo">⚡</div>
+                <img
+                  class="illustration"
+                  src="https://cdn-icons-png.flaticon.com/512/7893/7893979.png"
+                />
+              </div>
+              <div class="card-content">
+                <div class="tags">
+                  <span>Internship</span>
+                  <span>Mobile Design</span>
+                </div>
+                <h3>Chase Family Banking</h3>
+                <p>Helping parents manage finances for their children.</p>
+              </div>
+            </article>
 
-                    .bg-grey {
-                      fill: #f2f2f7;
-                    }
-                    .bg-blue {
-                      fill: #2f5bff;
-                    }
-                    .txt-black {
-                      fill: #000000;
-                    }
-                    .txt-white {
-                      fill: #ffffff;
-                    }
+            <article class="card">
+              <div class="card-hero">
+                <div class="card-logo">⚡</div>
+                <img
+                  class="illustration"
+                  src="https://cdn-icons-png.flaticon.com/512/7893/7893979.png"
+                />
+              </div>
+              <div class="card-content">
+                <div class="tags">
+                  <span>Internship</span>
+                  <span>Mobile Design</span>
+                </div>
+                <h3>Chase Family Banking</h3>
+                <p>Helping parents manage finances for their children.</p>
+              </div>
+            </article>
 
-                    .dot {
-                      animation: blink 1s infinite;
-                      fill: #999;
-                    }
-                  </style>
-                </defs>
-
-                <rect width="100%" height="100%" fill="#ffffff" />
-
-                <g class="msg-group" style="animation-delay: 0.2s">
-                  <text x="50" y="25" class="label">Airla Fan</text>
-                  <circle fill="#000" cx="25" cy="50" r="14" />
-                  <circle fill="#fff" cx="28" cy="48" r="4" />
-
-                  <rect
-                    x="50"
-                    y="32"
-                    width="265"
-                    height="50"
-                    rx="18"
-                    class="bg-grey"
-                  />
-                  <text x="65" y="52" class="text txt-black">
-                    Hey there, it's so nice to meet you!
-                  </text>
-                  <text x="65" y="70" class="text txt-black">
-                    How can I help you?
-                  </text>
-                </g>
-
-                <g class="msg-group" style="animation-delay: 1.4s">
-                  <text x="350" y="105" class="label" text-anchor="end">
-                    You
-                  </text>
-                  <rect
-                    x="135"
-                    y="112"
-                    width="215"
-                    height="38"
-                    rx="18"
-                    class="bg-blue"
-                  />
-                  <text x="150" y="136" class="text txt-white">
-                    Hey Airla! Can I see your work?
-                  </text>
-                </g>
-
-                <g class="msg-group" style="animation-delay: 2.2s">
-                  <rect
-                    x="50"
-                    y="165"
-                    width="50"
-                    height="30"
-                    rx="15"
-                    class="bg-grey"
-                  />
-                  <circle
-                    class="dot"
-                    cx="62"
-                    cy="180"
-                    r="2.5"
-                    style="animation-delay: 0s"
-                  />
-                  <circle
-                    class="dot"
-                    cx="75"
-                    cy="180"
-                    r="2.5"
-                    style="animation-delay: 0.2s"
-                  />
-                  <circle
-                    class="dot"
-                    cx="88"
-                    cy="180"
-                    r="2.5"
-                    style="animation-delay: 0.4s"
-                  />
-                  <animate
-                    attributeName="display"
-                    from="inline"
-                    to="none"
-                    begin="3s"
-                    dur="0.1s"
-                    fill="freeze"
-                  />
-                </g>
-
-                <g class="msg-group" style="animation-delay: 3s">
-                  <circle fill="#000" cx="25" cy="185" r="14" />
-                  <circle fill="#fff" cx="28" cy="183" r="4" />
-                  <rect
-                    x="50"
-                    y="165"
-                    width="265"
-                    height="40"
-                    rx="18"
-                    class="bg-grey"
-                  />
-                  <text x="65" y="188" class="text txt-black">
-                    Of course! I specialize in crafting
-                  </text>
-                  <text x="65" y="208" class="text txt-black">
-                    thoughtful digital experiences and
-                  </text>
-                  <text x="65" y="226" class="text txt-black">
-                    memorable visual brands.
-                  </text>
-                </g>
-
-                <g class="msg-group" style="animation-delay: 4.2s">
-                  <rect
-                    x="50"
-                    y="242"
-                    width="200"
-                    height="38"
-                    rx="18"
-                    class="bg-grey"
-                  />
-                  <text x="65" y="266" class="text txt-black">
-                    Scroll down to see my work!
-                  </text>
-                </g>
-              </svg>
-            </div>
+            <article class="card">
+              <div class="card-hero">
+                <div class="card-logo">💎</div>
+                <img
+                  class="illustration"
+                  src="https://cdn-icons-png.flaticon.com/512/7893/7893963.png"
+                />
+              </div>
+              <div class="card-content">
+                <div class="tags">
+                  <span>Web App</span>
+                  <span>UI/UX</span>
+                </div>
+                <h3>Aura Dashboard</h3>
+                <p>A clean analytics dashboard for creative agencies.</p>
+              </div>
+            </article>
           </div>
-          <hr class="hr2" />
-          <div class="card">
-            <div class="card-hero">
-              <div class="logo">
-                <div class="logo-box"></div>
-              </div>
-
-              <img
-                src="a015c700-57ff-4489-b348-34f2eedd179b.png"
-                alt="Family Illustration"
-                class="illustration"
-              />
-            </div>
-
-            <div class="card-content">
-              <h2>Chase Family Banking</h2>
-
-              <div class="tags">
-                <span>Internship</span>
-                <span>Mobile Design</span>
-              </div>
-
-              <p>
-                Designed a brand new experience at JPMorgan Chase to help
-                parents more easily manage finances for their children.
-              </p>
-            </div>
+        </section>
+        <section class="footer">
+          <h1>I'm Thrilled that you're here</h1>
+          <p>
+            Would love to talk projects, collaborations, or anything design!
+          </p>
+          <div class="social-row">
+            <button href="#" class="icon-btn" aria-label="Email"> ✉️ </button>
+            <button href="#" class="icon-btn" aria-label="LinkedIn"> in </button>
+            <button href="#" class="icon-btn" aria-label="Instagram"> 📷 </button>
+            <button href="#" class="icon-btn" aria-label="Medium"> M </button>
           </div>
-          <div class="card">
-            <div class="card-hero">
-              <div class="logo">
-                <div class="logo-box"></div>
-              </div>
-
-              <img
-                src="a015c700-57ff-4489-b348-34f2eedd179b.png"
-                alt="Family Illustration"
-                class="illustration"
-              />
-            </div>
-
-            <div class="card-content">
-              <h2>Chase Family Banking</h2>
-
-              <div class="tags">
-                <span>Internship</span>
-                <span>Mobile Design</span>
-              </div>
-
-              <p>
-                Designed a brand new experience at JPMorgan Chase to help
-                parents more easily manage finances for their children.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-hero">
-              <div class="logo">
-                <div class="logo-box"></div>
-              </div>
-
-              <img
-                src="a015c700-57ff-4489-b348-34f2eedd179b.png"
-                alt="Family Illustration"
-                class="illustration"
-              />
-            </div>
-
-            <div class="card-content">
-              <h2>Chase Family Banking</h2>
-
-              <div class="tags">
-                <span>Internship</span>
-                <span>Mobile Design</span>
-              </div>
-
-              <p>
-                Designed a brand new experience at JPMorgan Chase to help
-                parents more easily manage finances for their children.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-hero">
-              <div class="logo">
-                <div class="logo-box"></div>
-              </div>
-
-              <img
-                src="a015c700-57ff-4489-b348-34f2eedd179b.png"
-                alt="Family Illustration"
-                class="illustration"
-              />
-            </div>
-
-            <div class="card-content">
-              <h2>Chase Family Banking</h2>
-
-              <div class="tags">
-                <span>Internship</span>
-                <span>Mobile Design</span>
-              </div>
-
-              <p>
-                Designed a brand new experience at JPMorgan Chase to help
-                parents more easily manage finances for their children.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-hero">
-              <div class="logo">
-                <div class="logo-box"></div>
-              </div>
-
-              <img
-                src="a015c700-57ff-4489-b348-34f2eedd179b.png"
-                alt="Family Illustration"
-                class="illustration"
-              />
-            </div>
-
-            <div class="card-content">
-              <h2>Chase Family Banking</h2>
-
-              <div class="tags">
-                <span>Internship</span>
-                <span>Mobile Design</span>
-              </div>
-
-              <p>
-                Designed a brand new experience at JPMorgan Chase to help
-                parents more easily manage finances for their children.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-hero">
-              <div class="logo">
-                <div class="logo-box"></div>
-              </div>
-
-              <img
-                src="a015c700-57ff-4489-b348-34f2eedd179b.png"
-                alt="Family Illustration"
-                class="illustration"
-              />
-            </div>
-
-            <div class="card-content">
-              <h2>Chase Family Banking</h2>
-
-              <div class="tags">
-                <span>Internship</span>
-                <span>Mobile Design</span>
-              </div>
-
-              <p>
-                Designed a brand new experience at JPMorgan Chase to help
-                parents more easily manage finances for their children.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-hero">
-              <div class="logo">
-                <div class="logo-box"></div>
-              </div>
-
-              <img
-                src="a015c700-57ff-4489-b348-34f2eedd179b.png"
-                alt="Family Illustration"
-                class="illustration"
-              />
-            </div>
-
-            <div class="card-content">
-              <h2>Chase Family Banking</h2>
-
-              <div class="tags">
-                <span>Internship</span>
-                <span>Mobile Design</span>
-              </div>
-
-              <p>
-                Designed a brand new experience at JPMorgan Chase to help
-                parents more easily manage finances for their children.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+          <a>Built with inspiration from airla fan</a>
+        </section>
+      </main>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
