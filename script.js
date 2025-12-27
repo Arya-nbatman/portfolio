@@ -40,8 +40,18 @@ app.post("/blogs", async (req, res) => {
   }
 });
 
+app.get("/blogs", async (req, res) => {
+  try {
+    const result = await turso.execute({
+      sql: `SELECT id, title, html, created_at, updated_at FROM blogs ORDER BY created_at DESC`,
+    });
+
+    res.json(result.rows);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 app.listen(3000, () => console.log("Server running on http://localhost:3000"));
 
-const toggleBtn = document.getElementById("theme-toggle");
-const htmlElement = document.documentElement;
 

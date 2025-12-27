@@ -20,7 +20,7 @@
           />
           <div>
             <h1>Aryan Singh</h1>
-            <p class="role">Front-end developer</p>
+            <p class="role">Web developer</p>
           </div>
         </div>
         <nav>
@@ -33,55 +33,39 @@
         </nav>
       </aside>
 
-      <main class="posts">
-        <article class="post-card">
-          <span class="tag css">CSS</span>
-          <h2>Animating Link Underlines</h2>
-          <time>August 18</time>
-        </article>
-
-        <article class="post-card">
-          <span class="tag css">CSS</span>
-          <h2>Breaking to a new row with flexbox</h2>
-          <time>August 3</time>
-        </article>
-
-        <article class="post-card">
-          <span class="tag js">JS</span>
-          <h2>Set Video Playback Speed with JavaScript</h2>
-          <time>June 20</time>
-        </article>
-
-        <article class="post-card">
-          <span class="tag html">HTML</span>
-          <h2>The Ultimate HTML Cheat Sheet</h2>
-          <time>May 9</time>
-        </article>
-        <article class="post-card">
-          <span class="tag css">CSS</span>
-          <h2>Animating Link Underlines</h2>
-          <time>August 18</time>
-        </article>
-
-        <article class="post-card">
-          <span class="tag css">CSS</span>
-          <h2>Breaking to a new row with flexbox</h2>
-          <time>August 3</time>
-        </article>
-
-        <article class="post-card">
-          <span class="tag js">JS</span>
-          <h2>Set Video Playback Speed with JavaScript</h2>
-          <time>June 20</time>
-        </article>
-
-        <article class="post-card">
-          <span class="tag html">HTML</span>
-          <h2>The Ultimate HTML Cheat Sheet</h2>
-          <time>May 9</time>
-        </article>
-      </main>
+      <main class="posts" id="posts"></main>
     </div>
     <script src="/theme.js"></script>
+    <script>
+      function formatDate(dateString) {
+        return new Date(dateString).toLocaleDateString("en-US", {
+          month: "long",
+          day: "numeric",
+        });
+      }
+
+      const container = document.getElementById("posts");
+      if (container) {
+        fetch("http://localhost:3000/blogs")
+          .then((res) => res.json())
+          .then((blogs) => {
+            blogs.forEach((blog) => {
+              const card = document.createElement("article");
+              card.className = "post-card";
+
+              card.innerHTML = `
+                <article class="post-card">
+                <span class="tag html">HTML</span>
+                <h2>${blog.title}</h2>
+                <time>${formatDate(blog.updated_at)}</time>
+                </article>
+              `;
+
+              container.appendChild(card);
+            });
+          })
+          .catch((err) => console.error(err));
+      }
+    </script>
   </body>
 </html>
