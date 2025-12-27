@@ -83,26 +83,30 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 200px;
   gap: 16px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .card {
-  background: #1e1e1e;
+  background: var(--bg-body);
   border-radius: 16px;
   padding: 16px;
 }
 
 /* Bigger cards */
 .card.large {
-  grid-column: span 2;
+  grid-column: span 1;
   grid-row: span 2;
 }
 
 .card.wide {
-  grid-column: span 2;
+  grid-column: span 1;
+  grid-row: span 2;
 }
 
 .card.tall {
   grid-row: span 2;
+  grid-column: span 2;
 }
 
 @media (max-width: 900px) {
@@ -303,3 +307,20 @@ body {
   background: var(--bg-panel);
   transition: background 0.3s ease;
 }
+
+.galleryTitle {
+    margin: 100px;
+    line-height: 4rem;
+}
+
+.galleryTitle h1{
+    font-size: 62px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.galleryTitle p {
+    font-size: 22px;
+    
+}
+

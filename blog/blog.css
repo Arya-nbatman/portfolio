@@ -1,0 +1,231 @@
+:root {
+  /* BACKGROUNDS */
+  --bg-body: #fdfcfb;
+  --bg-panel: #ffffff;
+  --bg-panel-alt: #fafafa;
+  --bg-card-hero: #f4f7ff;
+  --bg-tag: #f3f4f6;
+
+  /* TEXT COLORS */
+  --text-main: #1a1a1a;
+  --text-bold: #000000;
+  --text-muted: #666666;
+  --text-light: #888888;
+  --text-sub: #999999;
+
+  /* BORDERS */
+  --border-light: #eeeeee;
+  --border-med: #e1e4e1;
+
+  /* ACCENTS & INTERACTIVE */
+  --accent-blue: #2563eb;
+  --btn-bg: #000000;
+  --btn-text: #ffffff;
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-text: #000000;
+  --btn-secondary-border: #000000;
+
+  /* CHAT SVG SPECIFICS */
+  --chat-bubble-grey: #f2f2f7;
+  --chat-bubble-blue: #2f5bff;
+  --chat-text-grey: #000000;
+  --chat-text-white: #ffffff;
+
+  /* ICONS */
+  --icon-bg: #3f3f3f;
+  --icon-hover: #000000;
+}
+
+/* DARK MODE OVERRIDES */
+[data-theme="dark"] {
+  --bg-body: #111111;
+  --bg-panel: #1a1a1a;
+  --bg-panel-alt: #222222;
+  --bg-card-hero: #252529;
+  --bg-tag: #333333;
+  --text-main: #e0e0e0;
+  --text-bold: #ffffff;
+  --text-muted: #a0a0a0;
+  --text-light: #888888;
+  --text-sub: #666666;
+  --border-light: #333333;
+  --border-med: #444444;
+  --accent-blue: #60a5fa;
+  --btn-bg: #ffffff;
+  --btn-text: #000000;
+  --btn-secondary-bg: #1a1a1a;
+  --btn-secondary-text: #ffffff;
+  --btn-secondary-border: #ffffff;
+  --chat-bubble-grey: #333333;
+  --chat-bubble-blue: #2f5bff;
+  --chat-text-grey: #ffffff;
+  --icon-bg: #333333;
+  --icon-hover: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: "Playfair Display", serif;
+  background: var(--bg-body);
+  color: var(--text-main);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- HOME ---------- */
+
+.home .container {
+  background: var(--bg-body);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+}
+
+.sidebar {
+  width: 240px;
+}
+
+.avatar {
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.sidebar h1 {
+  font-size: 28px;
+}
+
+.role {
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.sidebar nav {
+  position: fixed;
+  right: 80px;
+  top: 10%;
+  
+}
+
+.sidebar nav a {
+  display: block;
+  color: #bbb;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.sidebar nav a:hover {
+  color: #fff;
+  font-size: 22px;
+  transition: ease-in 10ms;
+  transform: translateX(10px);
+}
+
+.posts {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.post-card {
+  border: 1px solid #333;
+  padding: 20px;
+  background: var(--bg-body);
+  min-width: 200px;
+  min-height: 400px;
+}
+
+.post-card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.post-card time {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* ---------- TAGS ---------- */
+
+.tag {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.tag.css {
+  color: #ff8a65;
+}
+.tag.js {
+  color: #ffd54f;
+}
+.tag.html {
+  color: #4fc3f7;
+}
+
+/* ---------- POST PAGE ---------- */
+
+.post .article-container {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #f4f5f7;
+  padding: 60px;
+}
+
+.back {
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.article h1 {
+  font-size: 42px;
+  margin: 20px 0;
+}
+
+.meta {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.article p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+pre {
+  background: #e0e3e7;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.blogHero {
+  display: flex;
+  gap: 100px;
+}
+
+.blogHero h1 {
+  font-size: 112px;
+  margin-bottom: 80px;
+}
+
+.sidebarAnchors {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: none;
+  color: var(--btn-text);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
+  font-family: system-ui;
+  font-weight: 500;
+}

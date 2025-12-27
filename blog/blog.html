@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="home">
+    <div class="container">
+      <aside class="sidebar">
+        <div class="blogHero">
+          <img
+            src="https://t4.ftcdn.net/jpg/05/31/37/89/360_F_531378938_xwRjN9e5ramdPj2coDwHrwk9QHckVa5Y.jpg"
+            alt="Profile"
+            class="avatar"
+          />
+          <div>
+            <h1>Aryan Singh</h1>
+            <p class="role">Front-end developer</p>
+          </div>
+        </div>
+        <nav>
+          <a href="#" class="sidebarAnchors">All posts</a>
+          <a href="#" class="sidebarAnchors">HTML</a>
+          <a href="#" class="sidebarAnchors">CSS</a>
+          <a href="#" class="sidebarAnchors">JavaScript</a>
+          <a href="#" class="sidebarAnchors">Tutorials</a>
+          <a class="sidebarAnchors" id="theme-toggle">Toggle ◑</a>
+        </nav>
+      </aside>
+
+      <main class="posts">
+        <article class="post-card">
+          <span class="tag css">CSS</span>
+          <h2>Animating Link Underlines</h2>
+          <time>August 18</time>
+        </article>
+
+        <article class="post-card">
+          <span class="tag css">CSS</span>
+          <h2>Breaking to a new row with flexbox</h2>
+          <time>August 3</time>
+        </article>
+
+        <article class="post-card">
+          <span class="tag js">JS</span>
+          <h2>Set Video Playback Speed with JavaScript</h2>
+          <time>June 20</time>
+        </article>
+
+        <article class="post-card">
+          <span class="tag html">HTML</span>
+          <h2>The Ultimate HTML Cheat Sheet</h2>
+          <time>May 9</time>
+        </article>
+        <article class="post-card">
+          <span class="tag css">CSS</span>
+          <h2>Animating Link Underlines</h2>
+          <time>August 18</time>
+        </article>
+
+        <article class="post-card">
+          <span class="tag css">CSS</span>
+          <h2>Breaking to a new row with flexbox</h2>
+          <time>August 3</time>
+        </article>
+
+        <article class="post-card">
+          <span class="tag js">JS</span>
+          <h2>Set Video Playback Speed with JavaScript</h2>
+          <time>June 20</time>
+        </article>
+
+        <article class="post-card">
+          <span class="tag html">HTML</span>
+          <h2>The Ultimate HTML Cheat Sheet</h2>
+          <time>May 9</time>
+        </article>
+      </main>
+    </div>
+    <script src="/theme.js"></script>
+  </body>
 </html>
