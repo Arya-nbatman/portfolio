@@ -92,7 +92,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  max-width: 18vw;
   padding: 60px 40px;
   background: linear-gradient(var(--bg-panel), var(--bg-panel-alt));
   border-right: 1px solid var(--border-light);
@@ -115,12 +115,11 @@ body {
 }
 
 .sidebar-img {
-  width: 180px;
-  height: 180px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   margin-bottom: 20px;
   object-fit: cover;
-  margin-top: 80px;
   background-color: var(--border-light);
 }
 
@@ -142,8 +141,12 @@ body {
 
 .sidebar hr {
   margin: 28px 0;
-  min-width: 350px;
+  min-width: 15vw;
   border: 1px solid var(--border-med);
+}
+
+#theme-toggle{
+  background: var(--bg-panel);
 }
 
 .sidebar-btn {
@@ -380,16 +383,20 @@ body {
 .card-content {
   padding: 28px;
 }
-.card-content h3 {
+.card-content h1 {
   color: var(--text-main);
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  margin-top: 16px;
   font-family: system-ui;
+  font-style: italic;
+  font-weight: 400;
 }
 .card-content p {
   color: var(--text-muted);
   font-family: system-ui;
   margin-bottom: 16px;
   line-height: 1.5;
+  margin-top: 16px;
 }
 
 .tags span {
@@ -491,6 +498,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  border-style: none;
   background: var(--icon-bg);
   color: #fff;
   display: flex;
@@ -506,4 +514,8 @@ body {
   background: var(--icon-hover);
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.bgSvgHero {
+  fill: var(--bg-panel);
 }
