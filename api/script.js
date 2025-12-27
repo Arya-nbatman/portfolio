@@ -13,15 +13,15 @@ app.use(
 );
 // Initialize Turso client
 const turso = createClient({
-  url: process.env.TURSO_DATABASE_URL,
-  authToken: process.env.TURSO_AUTH_TOKEN,
+  url: process.env.local.TURSO_DATABASE_URL,
+  authToken: process.env.local.TURSO_AUTH_TOKEN,
 });
 
 // POST endpoint to save blogs
 app.post("/blogs", async (req, res) => {
-  const { title, html } = req.body;
+  const { title, html, category } = req.body;
 
-  if (!title || !html) {
+  if (!title || !html || !category) {
     return res
       .status(400)
       .json({ success: false, error: "Title or HTML missing" });
@@ -29,8 +29,8 @@ app.post("/blogs", async (req, res) => {
 
   try {
     await turso.execute({
-      sql: `INSERT INTO blogs (title, html) VALUES (?, ?)`,
-      args: [title, html],
+      sql: `INSERT INTO blogs (title, html, categories) VALUES (?, ?, ?)`,
+      args: [title, html, category],
     });
 
     res.json({ success: true });
@@ -43,7 +43,7 @@ app.post("/blogs", async (req, res) => {
 app.get("/blogs", async (req, res) => {
   try {
     const result = await turso.execute({
-      sql: `SELECT id, title, html, created_at, updated_at FROM blogs ORDER BY created_at DESC`,
+      sql: `SELECT id, title, html, created_at, updated_at, categories FROM blogs ORDER BY created_at DESC`,
     });
 
     res.json(result.rows);
@@ -52,6 +52,5 @@ app.get("/blogs", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Server running on http://localhost:3000"));
-
+export default app;
 

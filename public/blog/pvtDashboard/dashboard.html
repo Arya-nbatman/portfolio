@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toast UI Editor</title>
+
+    <link
+      rel="stylesheet"
+      href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css"
+    />
+  </head>
+  <body>
+    <input type="text" id="title" placeholder="Enter blog title" />
+    <label for="category">Choose an option:</label>
+    <select id="category" name="category">
+      <option value="">-- Select --</option>
+      <option value="html">Html</option>
+      <option value="css">Css</option>
+      <option value="Javascript">Javascript</option>
+      <option value="Tutorials">Tutorials</option>
+    </select>
+    <div id="editor"></div>
+    <button id="save">Save</button>
+
+    <!-- Toast UI JS -->
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
+    <!-- Your code -->
+    <script src="/public/blog/pvtDashboard/dashboard.js"></script>
+  </body>
+</html>
