@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <title>Breaking to a new row with flexbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post // Aryan Singh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/blog/blog.css" />
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
 
-  </head>
-  <body class="post">
-    <div class="article-container">
-      <a href="/blog/blog.html" class="back">← Back</a>
+    <aside class="sidebar-v2">
+        <div class="sb-header">
+            <div class="sb-logo">AS<span>©</span></div>
+            <div class="sb-time" id="digital-clock">00:00:00</div>
+        </div>
+        <div class="sb-center">
+            <nav class="v-nav">
+                <a href="/index.html">INDEX</a>
+                <a href="/gallery/gallery.html">ARCHIVE</a>
+                <a href="/about/about.html">ABOUT</a>
+                <a href="/blog/blog.html" class="active">BLOG</a>
+            </nav>
+        </div>
+        <div class="sb-footer"><p>READING MODE</p></div>
+    </aside>
 
-      <article class="article">
-        <span id="category">CSS</span>
-        <h1 id="title"></h1>
-        <p class="meta" id="date"></p>
+    <main class="content-v2">
+        <div class="article-container">
+            <a href="blog.html" class="back-btn">← BACK TO LIST</a>
+            
+            <header class="post-meta">
+                <span id="category" class="tag"></span>
+                <h1 id="title"></h1>
+                <time id="date"></time>
+            </header>
 
-        <p id="content"></p>
-      </article>
-    </div>
+            <article id="content" class="article-content"></article>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="/blog/post.js"></script>
-  </body>
+    <script>
+        setInterval(() => { document.getElementById('digital-clock').innerText = new Date().toLocaleTimeString('en-GB'); }, 1000);
+        window.addEventListener("mousemove", e => {
+            gsap.to("#cursor-dot", { x: e.clientX, y: e.clientY, duration: 0.1 });
+            gsap.to("#cursor-outline", { x: e.clientX - 20, y: e.clientY - 20, duration: 0.4 });
+        });
+    </script>
+</body>
 </html>

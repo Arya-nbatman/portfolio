@@ -1,11 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Singh | Portfolio</title>
-</head>
-<body>
-    <h1>Hello world</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About // Aryan Singh</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/about/about.css" />
+  </head>
+  <body class="is-loading">
+    <div class="noise-overlay"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+
+    <aside class="sidebar-v2">
+      <div class="sb-header">
+        <div class="sb-logo">AS<span>©</span></div>
+        <div class="sb-time" id="digital-clock">00:00:00</div>
+      </div>
+      <div class="sb-center">
+        <nav class="v-nav">
+          <a href="index.html" data-text="INDEX"><span>INDEX</span></a>
+          <a href="gallery.html" data-text="ARCHIVE"><span>ARCHIVE</span></a>
+          <a href="#" class="active" data-text="ABOUT"><span>ABOUT</span></a>
+        </nav>
+      </div>
+      <div class="sb-footer">
+        <a href="your-cv.pdf" download class="cv-button">
+          <span class="cv-circle"></span>
+          <span class="cv-text">GET CV</span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="content-v2">
+      <section class="profile-hero container">
+        <div class="profile-grid">
+          <div class="profile-img-wrap">
+            <div class="parallax-img-container">
+              <img
+                src="https://t4.ftcdn.net/jpg/05/31/37/89/360_F_531378938_xwRjN9e5ramdPj2coDwHrwk9QHckVa5Y.jpg"
+                alt="Aryan Singh"
+                class="main-portrait"
+              />
+            </div>
+            <div class="img-meta">
+              <span>NAME: ARYAN SINGH</span>
+              <span>LOC: PITTSBURGH, PA</span>
+            </div>
+          </div>
+          <div class="profile-bio">
+            <h1 class="reveal-type">
+              Building <span class="serif">Interfaces</span> that feel like
+              <span class="serif">experiences</span>.
+            </h1>
+            <p class="bio-p">
+              I am a designer and developer at Carnegie Mellon, bridging the gap
+              between aesthetic theory and technical execution. My work focuses
+              on motion-heavy, high-conversion digital products.
+            </p>
+
+            <div class="current-status">
+              <div class="status-dot-pulse"></div>
+              <p>CURRENTLY EXPLORING: WEBGRAPHICS & SHADERS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech-stack container">
+        <h2 class="section-label">Technical Arsenal</h2>
+        <div class="stack-bento">
+          <div class="stack-item wide">
+            <span class="stack-cat">Frontend Architecture</span>
+            <h3>React, Next.js, & TypeScript</h3>
+            <p>
+              Building scalable, type-safe applications with a focus on
+              performance and SEO.
+            </p>
+          </div>
+          <div class="stack-item">
+            <span class="stack-cat">Motion</span>
+            <h3>GSAP / Three.js</h3>
+          </div>
+          <div class="stack-item">
+            <span class="stack-cat">Backend</span>
+            <h3>Node & Python</h3>
+          </div>
+          <div class="stack-item">
+            <span class="stack-cat">Design</span>
+            <h3>Figma / C4D</h3>
+          </div>
+          <div class="stack-item wide">
+            <span class="stack-cat">Methodology</span>
+            <h3>Design Systems & Component-Driven Dev</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="philosophy container">
+        <div class="phil-header">
+          <h2 class="serif">Design Philosophy</h2>
+        </div>
+        <div class="phil-grid">
+          <div class="phil-card">
+            <h3>01 / NOISE REDUCTION</h3>
+            <p>
+              If a pixel doesn't serve a purpose, it doesn't belong on the
+              screen. Perfection is achieved when there is nothing left to take
+              away.
+            </p>
+          </div>
+          <div class="phil-card">
+            <h3>02 / MOTION AS NARRATIVE</h3>
+            <p>
+              Animation shouldn't be an afterthought. I use motion to guide the
+              user's eye and tell the brand's story through kinetic interaction.
+            </p>
+          </div>
+          <div class="phil-card">
+            <h3>03 / COGNITIVE LOAD</h3>
+            <p>
+              Design should be invisible. I strive to create interfaces so
+              intuitive that the user forgets they are interacting with a
+              machine.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="f-bottom">
+          <p>© 2025 ARYAN SINGH</p>
+          <p>DESIGNED & DEVELOPED IN-HOUSE</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="/about/about.js"></script>
+  </body>
 </html>
