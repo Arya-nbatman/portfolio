@@ -1,121 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Archive // Aryan Singh</title>
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/gallery/gallery.css" />
-</head>
-<body class="is-loading">
-
+  </head>
+  <body class="is-loading">
     <div class="noise-overlay"></div>
     <div id="cursor-dot"></div>
     <div id="cursor-outline"></div>
 
     <aside class="sidebar-v2">
-        <div class="sb-header">
-            <div class="sb-logo">AS<span>©</span></div>
-            <div class="sb-time" id="digital-clock">00:00:00</div>
-        </div>
+      <div class="sb-header">
+        <div class="sb-logo">AS<span>©</span></div>
+        <div class="sb-time" id="digital-clock">00:00:00</div>
+      </div>
 
-        <div class="sb-center">
-            <nav class="v-nav">
-                <a href="index.html" data-text="INDEX"><span>INDEX</span></a>
-                <a href="#" class="active" data-text="ARCHIVE"><span>ARCHIVE</span></a>
-                <a href="about.html" data-text="ABOUT"><span>ABOUT</span></a>
-            </nav>
-        </div>
-
-        <div class="sb-footer">
-            <a href="your-cv.pdf" download class="cv-button">
-                <span class="cv-circle"></span>
-                <span class="cv-text">GET CV</span>
-            </a>
-            <div class="sb-status">
-                <div class="status-indicator"></div>
-                <p>AVAILABLE FOR 2025</p>
+      <div class="sb-center">
+        <nav class="v-nav">
+          <a href="/" data-text="INDEX" class="active"
+            ><span></span><span>INDEX</span></a
+          >
+          <a href="/gallery/gallery.html" data-text="ARCHIVE"
+            ><span></span><span>GALLERY</span></a
+          >
+          <a href="/about/about.html" data-text="ABOUT"
+            ><span></span><span>ABOUT</span></a
+          >
+          <a href="/blog/blog.html" data-text="ABOUT"
+            ><span></span><span>BLOG</span></a
+          >
+          <a href="your-cv.pdf" download class="cv-button">
+            <div class="cv">
+              <span class="cv-text"><span class="cv-circle"></span>GET CV</span>
             </div>
+          </a>
+        </nav>
+      </div>
+
+      <div class="sb-footer">
+        <div class="sb-status">
+          <div class="status-indicator"></div>
+          <p>AVAILABLE FOR 2025</p>
         </div>
+      </div>
     </aside>
 
     <main class="content-v2">
-        <header class="gallery-header container">
-            <div class="galleryTitle">
-                <h1 class="reveal-type">Selected <span class="serif">Works</span></h1>
-                <p>A curated archive of digital experiments, interfaces, and visual identities crafted with precision.</p>
+      <header class="gallery-header container">
+        <div class="galleryTitle">
+          <h1 class="reveal-type">Selected <span class="serif">Works</span></h1>
+          <p>
+            A curated archive of digital experiments, interfaces, and visual
+            identities crafted with precision.
+          </p>
+        </div>
+      </header>
+
+      <section class="bento-container container">
+        <div class="bento-grid">
+          <div class="card large reveal-card">
+            <img
+              src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070"
+              alt="Work"
+            />
+            <div class="card-overlay">
+              <span>01 / INTERFACE</span>
+              <h3>Aura Dashboard</h3>
             </div>
-        </header>
+          </div>
 
-        <section class="bento-container container">
-            <div class="bento-grid">
-                <div class="card large reveal-card">
-                    <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070" alt="Work">
-                    <div class="card-overlay">
-                        <span>01 / INTERFACE</span>
-                        <h3>Aura Dashboard</h3>
-                    </div>
-                </div>
-
-                <div class="card reveal-card">
-                    <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=1935" alt="Work">
-                    <div class="card-overlay">
-                        <span>02 / 3D CODE</span>
-                        <h3>Void Engine</h3>
-                    </div>
-                </div>
-
-                <div class="card reveal-card">
-                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964" alt="Work">
-                    <div class="card-overlay">
-                        <span>03 / BRANDING</span>
-                        <h3>Nexus Identity</h3>
-                    </div>
-                </div>
-
-                <div class="card tall reveal-card">
-                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070" alt="Work">
-                    <div class="card-overlay">
-                        <span>04 / HARDWARE</span>
-                        <h3>Retro Synth</h3>
-                    </div>
-                </div>
-
-                <div class="card wide reveal-card">
-                    <img src="https://images.unsplash.com/photo-1635427333019-389367468648?q=80&w=2070" alt="Work">
-                    <div class="card-overlay">
-                        <span>05 / STRATEGY</span>
-                        <h3>Motion System</h3>
-                    </div>
-                </div>
-
-                <div class="card reveal-card">
-                    <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070" alt="Work">
-                    <div class="card-overlay">
-                        <span>06 / EXPERIMENT</span>
-                        <h3>Neural Art</h3>
-                    </div>
-                </div>
+          <div class="card reveal-card">
+            <img
+              src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=1935"
+              alt="Work"
+            />
+            <div class="card-overlay">
+              <span>02 / 3D CODE</span>
+              <h3>Void Engine</h3>
             </div>
-        </section>
+          </div>
 
-        <footer class="main-footer">
-            <div class="footer-grid">
-                <div class="f-col">
-                    <h4>SOCIALS</h4>
-                    <a href="#">TWITTER</a>
-                    <a href="#">INSTAGRAM</a>
-                </div>
-                <div class="f-col">
-                    <h4>SAY HELLO</h4>
-                    <a href="mailto:hello@aryansingh.com">HI@ARYAN.DESIGN</a>
-                </div>
+          <div class="card reveal-card">
+            <img
+              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964"
+              alt="Work"
+            />
+            <div class="card-overlay">
+              <span>03 / BRANDING</span>
+              <h3>Nexus Identity</h3>
             </div>
-            <div class="f-bottom">
-                <p>© 2025 ARYAN SINGH</p>
-                <p>BACK TO TOP ↑</p>
+          </div>
+
+          <div class="card tall reveal-card">
+            <img
+              src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070"
+              alt="Work"
+            />
+            <div class="card-overlay">
+              <span>04 / HARDWARE</span>
+              <h3>Retro Synth</h3>
             </div>
-        </footer>
+          </div>
+
+          <div class="card wide reveal-card">
+            <img
+              src="https://images.unsplash.com/photo-1635427333019-389367468648?q=80&w=2070"
+              alt="Work"
+            />
+            <div class="card-overlay">
+              <span>05 / STRATEGY</span>
+              <h3>Motion System</h3>
+            </div>
+          </div>
+
+          <div class="card reveal-card">
+            <img
+              src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070"
+              alt="Work"
+            />
+            <div class="card-overlay">
+              <span>06 / EXPERIMENT</span>
+              <h3>Neural Art</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tech-marquee">
+        <div class="marquee-inner">
+          <span
+            >GSAP / THREE.JS / REACT / DESIGN SYSTEMS / CREATIVE DIRECTION /
+            UI/UX /
+          </span>
+          <span
+            >GSAP / THREE.JS / REACT / DESIGN SYSTEMS / CREATIVE DIRECTION /
+            UI/UX /
+          </span>
+        </div>
+      </section>
+      <footer class="main-footer">
+        <div class="footer-grid">
+          <div class="f-col">
+            <h4>SOCIALS</h4>
+            <a href="#">TWITTER</a>
+            <a href="#">INSTAGRAM</a>
+          </div>
+          <div class="f-col">
+            <h4>SAY HELLO</h4>
+            <a href="mailto:hello@aryansingh.com">HI@ARYAN.DESIGN</a>
+          </div>
+        </div>
+        <div class="f-bottom">
+          <p>© 2025 ARYAN SINGH</p>
+          <p>BACK TO TOP ↑</p>
+        </div>
+      </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
@@ -123,5 +167,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="/gallery/gallery.js"></script>
-</body>
+  </body>
 </html>
