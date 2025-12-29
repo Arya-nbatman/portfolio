@@ -46,6 +46,31 @@ body {
   color: var(--accent);
 }
 
+.sb-game {
+  color: #444;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+  margin-bottom: 3vh;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sb-game:hover {
+  color: var(--fg);
+  background-color: var(--accent);
+}
+.sb-footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .v-nav a {
   display: block;
   font-size: 2rem;

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/gallery/gallery.css" />
   </head>
   <body class="is-loading">
+    <a id="top"></a>
     <div class="noise-overlay"></div>
     <div id="cursor-dot"></div>
     <div id="cursor-outline"></div>
@@ -23,10 +24,10 @@
 
       <div class="sb-center">
         <nav class="v-nav">
-          <a href="/" data-text="INDEX" class="active"
+          <a href="/" data-text="INDEX"
             ><span></span><span>INDEX</span></a
           >
-          <a href="/gallery/gallery.html" data-text="ARCHIVE"
+          <a href="/gallery/gallery.html" data-text="ARCHIVE" class="active"
             ><span></span><span>GALLERY</span></a
           >
           <a href="/about/about.html" data-text="ABOUT"
@@ -44,6 +45,11 @@
       </div>
 
       <div class="sb-footer">
+        <a class="sb-game" href="/game/game.html">
+          <div>
+            <span>Play a game</span>
+          </div>
+        </a>
         <div class="sb-status">
           <div class="status-indicator"></div>
           <p>AVAILABLE FOR 2025</p>
@@ -157,7 +163,7 @@
         </div>
         <div class="f-bottom">
           <p>© 2025 ARYAN SINGH</p>
-          <p>BACK TO TOP ↑</p>
+          <a href="#top" class="f-btn"><p>BACK TO TOP ↑</p></a>
         </div>
       </footer>
     </main>

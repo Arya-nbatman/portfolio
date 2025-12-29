@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body class="is-loading">
+    <a id="top"></a>
     <div class="noise-overlay"></div>
 
     <div id="cursor-dot"></div>
@@ -26,16 +27,16 @@
         <div class="sb-center">
           <nav class="v-nav">
             <a href="/" data-text="INDEX" class="active"
-              ><span ></span><span>INDEX</span></a
+              ><span></span><span>INDEX</span></a
             >
             <a href="/gallery/gallery.html" data-text="ARCHIVE"
               ><span></span><span>GALLERY</span></a
             >
             <a href="/about/about.html" data-text="ABOUT"
-              ><span ></span><span>ABOUT</span></a
+              ><span></span><span>ABOUT</span></a
             >
             <a href="/blog/blog.html" data-text="ABOUT"
-              ><span ></span><span>BLOG</span></a
+              ><span></span><span>BLOG</span></a
             >
             <a href="your-cv.pdf" download class="cv-button">
               <div class="cv">
@@ -48,11 +49,16 @@
         </div>
 
         <div class="sb-footer">
-          <div class="sb-status">
-            <div class="status-indicator"></div>
-            <p>AVAILABLE FOR 2025 PROJECTS</p>
+        <a class="sb-game" href="/game/game.html">
+          <div>
+            <span>Play a game</span>
           </div>
+        </a>
+        <div class="sb-status">
+          <div class="status-indicator"></div>
+          <p>AVAILABLE FOR 2025</p>
         </div>
+      </div>
       </aside>
 
       <main class="content-v2">
@@ -131,7 +137,7 @@
           </div>
           <div class="f-bottom">
             <p>© 2025 ARYAN SINGH</p>
-            <p>BACK TO TOP ↑</p>
+            <a href="#top" class="f-btn"><p>BACK TO TOP ↑</p></a>
           </div>
         </footer>
       </main>
